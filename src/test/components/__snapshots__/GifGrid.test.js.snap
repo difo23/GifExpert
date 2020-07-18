@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test GifGrid Component should get data and loading false 1`] = `
+<div>
+  <h3>
+    Bob Sponge
+  </h3>
+  <ul
+    className="card-grid"
+  >
+    <GifItem
+      key="1234"
+      title="Pruebas unitarias"
+      url="https://localhost:3000/algo.png"
+    />
+    <GifItem
+      key="12345"
+      title="Pruebas unitarias"
+      url="https://localhost:3000/algo.png"
+    />
+  </ul>
+</div>
+`;

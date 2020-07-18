@@ -2,31 +2,30 @@ import React /*,{ useState, useEffect }*/ from 'react';
 import PropTypes from 'prop-types';
 import { useFetchGifs } from '../../hooks/useFetchGifs';
 import { LinearProgress } from '@material-ui/core';
-// import { getGifs } from '../../helpers/getGifs';
+import GifItem from './GifItem';
 
-const Gifgrid = ({ category }) => {
+const GifGrid = ({ category }) => {
 	const { data, loading } = useFetchGifs(category);
 
 	return (
 		<div>
 			<h3>{category}</h3>
-			{loading && <LinearProgress />}
-			<div className="card-grid">
+			{loading && (
+				<p id="loading">
+					<LinearProgress />
+				</p>
+			)}
+			<ul className="card-grid">
 				{data.map(({ id, url, title }) => {
-					return (
-						<div key={id} className="card">
-							<h4>{title}</h4>
-							<img src={url} alt={title} />
-						</div>
-					);
+					return <GifItem key={id} url={url} title={title} />;
 				})}
-			</div>
+			</ul>
 		</div>
 	);
 };
 
-Gifgrid.propTypes = {
+GifGrid.propTypes = {
 	category: PropTypes.string
 };
 
-export default Gifgrid;
+export default GifGrid;

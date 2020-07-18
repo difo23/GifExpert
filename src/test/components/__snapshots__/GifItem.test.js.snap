@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test GifItem Component Test prueba estructra GifItem 1`] = `
+<div
+  className="card animate__animated animate__fadeIn"
+  key="123456"
+>
+  <h4>
+    imagen de pruewba
+  </h4>
+  <img
+    alt="imagen de pruewba"
+    src="http://localhost:3000/algo.png"
+  />
+</div>
+`;

@@ -18,11 +18,14 @@ const AddElement = ({ handleAdd }) => {
 	};
 
 	return (
-		<form onSubmit={handleSumit}>
-			<div>
-				<input type="text" value={element} onChange={handleChange} />
-			</div>
-		</form>
+		<div>
+			<p>{element}</p>
+			<form onSubmit={handleSumit}>
+				<div>
+					<input type="text" value={element} onChange={handleChange} />
+				</div>
+			</form>
+		</div>
 	);
 };
 

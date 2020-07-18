@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas componente App index should snapshot 1`] = `
+<div>
+  <h2>
+     GifExpertApp
+  </h2>
+  <hr />
+  <AddElement
+    handleAdd={[Function]}
+  />
+  <div>
+    <GifGrid
+      category="Hola"
+      key="Hola"
+    />
+    <GifGrid
+      category="Mono"
+      key="Mono"
+    />
+  </div>
+</div>
+`;
